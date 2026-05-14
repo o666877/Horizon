@@ -5,289 +5,214 @@ date: 2026-05-14
 lang: en
 ---
 
-> From 40 items, 12 important content pieces were selected
+> From 26 items, 10 important content pieces were selected
 
 ---
 
-1. [TextGen launches as native desktop app, open-source LM Studio alternative](#item-1) ⭐️ 9.0/10
-2. [LLMs Enable Personal Software: The Emacsification of Code](#item-2) ⭐️ 8.0/10
-3. [Leaving GitHub for Forgejo](#item-3) ⭐️ 8.0/10
-4. [ProPublica Reveals Algorithmic Health Insurance Denial System](#item-4) ⭐️ 8.0/10
-5. [CSP Allow-list Experiment](#item-5) ⭐️ 8.0/10
-6. [Fragnesia: New Linux Kernel LPE Vulnerability Discovered](#item-6) ⭐️ 8.0/10
-7. [Revisiting mshare: page table sharing for Linux shared memory](#item-7) ⭐️ 8.0/10
-8. [German Sovereign Tech Fund invests €1M+ in KDE security](#item-8) ⭐️ 8.0/10
-9. [Google Shuts Free Search, Cloudflare Blocks AI Bots: Community Seeks Alternatives](#item-9) ⭐️ 8.0/10
-10. [DramaBox: Expressive Open-Source Voice Model on LTX 2.3](#item-10) ⭐️ 8.0/10
-11. [Samsung union strike slashes chip output, supply chain at risk](#item-11) ⭐️ 8.0/10
-12. [Xiaomi Open-Sources OneVL: One-Step Latent Reasoning for Autonomous Driving](#item-12) ⭐️ 8.0/10
+1. [YellowKey Zero-Day Exploit Bypasses Microsoft BitLocker via USB](#item-1) ⭐️ 9.0/10
+2. [The Emacsification of Software Through LLMs](#item-2) ⭐️ 8.0/10
+3. [Anthropic Launches Claude for Small Business](#item-3) ⭐️ 7.0/10
+4. [Guide to Registering Free .us Locality Domains and Its Challenges](#item-4) ⭐️ 7.0/10
+5. [MacBook Neo Deep Dive: Benchmarks, 8GB RAM, and Wafer Economics](#item-5) ⭐️ 7.0/10
+6. [Twin Brothers Wipe 96 Government Databases After Firing](#item-6) ⭐️ 7.0/10
+7. [Princeton Ends 133-Year Unproctored Exam Tradition Due to AI](#item-7) ⭐️ 7.0/10
+8. [CSP Allow-list Experiment for Sandboxed Iframes](#item-8) ⭐️ 7.0/10
+9. [Enterprise TDMs Motivated by Job Security Over Technical Merit](#item-9) ⭐️ 7.0/10
+10. [llm CLI 0.32a2 Adds OpenAI Responses Endpoint Support](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [TextGen launches as native desktop app, open-source LM Studio alternative](https://www.reddit.com/r/LocalLLaMA/comments/1tbyyee/textgen_is_now_a_native_desktop_app_opensource/) ⭐️ 9.0/10
+## [YellowKey Zero-Day Exploit Bypasses Microsoft BitLocker via USB](https://www.tomshardware.com/tech-industry/cyber-security/microsoft-bitlocker-protected-drives-can-now-be-opened-with-just-some-files-on-a-usb-stick-yellowkey-zero-day-exploit-demonstrates-an-apparent-backdoor) ⭐️ 9.0/10
 
-TextGen (formerly text-generation-webui) has been transformed from a web UI into a no-install, portable desktop application for Windows, Linux, and macOS, with a polished Electron-based UI and zero outbound requests. This update fills a major gap in the open-source local LLM ecosystem by providing a free, private, and fully open-source alternative to the popular but proprietary LM Studio, giving users more control and competition. TextGen ships with portable builds for CUDA, Vulkan, CPU-only, Apple Silicon/Intel, and ROCm; it uses ik_llama.cpp which offers new quantization types not found in vanilla llama.cpp used by LM Studio and Ollama.
+A newly demonstrated zero-day exploit named YellowKey allows attackers to completely bypass Microsoft BitLocker drive encryption simply by copying specific files to a USB stick and rebooting into the Windows Recovery Environment. This vulnerability represents a major security failure for a widely used enterprise encryption tool, potentially exposing sensitive data on lost or stolen devices. Furthermore, the exploit's mechanism raises serious concerns about whether Microsoft intentionally implemented a backdoor, which could severely damage enterprise trust in Windows platforms. The YellowKey exploit specifically targets Windows 11 systems and leverages the Windows Recovery Environment (WinRE) to execute the bypass. Proof-of-concept code for YellowKey, along with a related SYSTEM elevation zero-day called GreenPlasma, has been publicly released on GitHub.
 
-reddit · r/LocalLLaMA · oobabooga4 · May 13, 13:00
+hackernews · cookiengineer · May 14, 02:45 · [Discussion](https://news.ycombinator.com/item?id=48130519)
 
-**Background**: TextGen, initially created by oobabooga in December 2022, predates Llama and llama.cpp and became one of the first popular web UIs for running local LLMs. LM Studio, a leading alternative, is also an Electron app but is proprietary and phones home with system data. Electron is a framework for building cross-platform desktop apps using web technologies.
+**Background**: BitLocker is a full disk encryption feature included with Microsoft Windows, primarily designed to protect data by encrypting entire volumes and preventing unauthorized access if a device is lost or stolen. The Windows Recovery Environment (WinRE) is a minimal operating system used to repair issues, which can be accessed externally. Historically, the sudden discontinuation of the open-source encryption tool TrueCrypt in 2014, which oddly recommended users switch to BitLocker, has fueled long-standing theories about potential government backdoors in Microsoft's encryption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/LM_Studio">LM Studio</a></li>
-<li><a href="https://mljourney.com/lm-studio-complete-setup-and-usage-guide/">LM Studio: Complete Setup and Usage Guide - ML Journey</a></li>
-<li><a href="https://www.electronjs.org/">Build cross-platform desktop apps with JavaScript, HTML, and CSS | Electron</a></li>
+<li><a href="https://www.tomshardware.com/tech-industry/cyber-security/microsoft-bitlocker-protected-drives-can-now-be-opened-with-just-some-files-on-a-usb-stick-yellowkey-zero-day-exploit-demonstrates-an-apparent-backdoor">Microsoft BitLocker-protected drives can now be opened with just some files on a USB stick — YellowKey zero-day exploit demonstrates an apparent backdoor | Tom's Hardware</a></li>
+<li><a href="https://securityonline.info/windows-bitlocker-bypass-yellowkey-greenplasma-poc-disclosure/">Exploit Code Released: Public PoC Dumps for Windows BitLocker Bypass and SYSTEM Elevation Zero-Days</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community reaction is overwhelmingly positive, with users expressing excitement about having a private, open-source alternative to LM Studio. Many recall their early days with the project and appreciate the continuous improvement; some ask about technical details like upgrading to Gradio 6 or installing the latest llama.cpp.
+**Discussion**: The community is highly concerned about the simplicity and danger of the exploit, with many users questioning Microsoft's commitment to security and the risks of being locked into their ecosystem. A significant point of discussion revolves around the suspicion that this is an intentional backdoor, reviving old theories about the abrupt shutdown of TrueCrypt in 2014, though some note this specific exploit only affects Windows 11.
 
-**Tags**: `#LLM`, `#open-source`, `#desktop app`, `#local AI`, `#TextGen`
+**Tags**: `#security`, `#bitlocker`, `#zero-day`, `#windows`, `#encryption`
 
 ---
 
 <a id="item-2"></a>
-## [LLMs Enable Personal Software: The Emacsification of Code](https://sockpuppet.org/blog/2026/05/12/emacsification/) ⭐️ 8.0/10
+## [The Emacsification of Software Through LLMs](https://sockpuppet.org/blog/2026/05/12/emacsification/) ⭐️ 8.0/10
 
-A blog post argues that LLMs make building personal software so easy that software is becoming a highly customizable, personal 'emacs file' for each user, shifting from prepackaged to individually crafted tools. This signals a potential democratization of software creation, where users can easily tailor applications to their exact needs, reducing reliance on one-size-fits-all products and rekindling the spirit of personal computing from the 1960s. Prominent security researcher tptacek and dang endorse the idea, with tptacek listing specific app categories (e.g., podcast apps, note-taking) where LLM-generated solutions can already outperform commercial options. The term 'Emacsification' originates from the vision of making the entire GNU system as extensible as Emacs.
+An article argues that LLMs are driving the 'Emacsification' of software, making it easier for individuals to build personalized, bespoke applications rather than installing prepackaged professional ones. This shift means software creation is becoming so accessible that every user's setup can be as deeply customized as an Emacs configuration. This paradigm shift could fundamentally alter the software industry by moving power away from monolithic, one-size-fits-all applications toward highly individualized user experiences. It resurrects the original 1960s vision of home computing where anyone could program tools for their own specific needs. Users are already using LLMs like Claude to build custom replacements for common apps like podcast players, feed readers, and note-taking tools. However, just like traditional Emacs configurations, this AI-generated personal software risks being brittle and difficult to maintain across different platforms.
 
 hackernews · rdslw · May 13, 07:06 · [Discussion](https://news.ycombinator.com/item?id=48118727)
 
-**Background**: Emacs is a highly extensible text editor that allows users to customize almost everything via Lisp code. The idea of 'Emacsification' was coined in the Guile project's documentation, envisioning a future where programs run inside Guile (a Lisp interpreter) much like Emacs extensions. This news extends that concept to LLMs, suggesting that AI now enables non-programmers to build custom software easily.
+**Background**: Emacs is a family of text editors famous for their near-limitless extensibility, originally developed by Richard Stallman in the 1970s. Unlike conventional software where users wait for official updates or plugins, Emacs allows users to endlessly customize their environment using its built-in Lisp programming language, often resulting in highly personal but complex configurations known as '.emacs files'.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://wingolog.org/archives/2009/01/07/a-brief-history-of-guile">a brief history of guile — wingolog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Emacs">Emacs - Wikipedia</a></li>
+<li><a href="https://www.gnu.org/software/emacs/emacs-paper">EMACS : The Extensible , Customizable Display Editor - GNU Project...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely agree: tptacek provides a concrete list of app categories where LLM-built tools surpass commercial alternatives; dang shares he has been advocating this view, and SoftTalker reminds that personal software was the original vision of home computing. However, shaokind notes that Emacs itself taught brittle customization practices, not seamless personal software building.
+**Discussion**: The community largely agrees with the premise, with users like dang noting that software production is now so easy that everyone gets a personal software cocoon. However, concerns were raised about the brittleness and cross-platform maintenance nightmares of such personal setups, reminiscent of traditional Emacs configurations, while others noted this fulfills the original 1960s dream of personal computing.
 
-**Tags**: `#software development`, `#AI`, `#LLMs`, `#personal software`, `#customization`
+**Tags**: `#LLMs`, `#software-development`, `#personal-software`, `#emacs`, `#paradigm-shift`
 
 ---
 
 <a id="item-3"></a>
-## [Leaving GitHub for Forgejo](https://jorijn.com/en/blog/leaving-github-for-forgejo/) ⭐️ 8.0/10
+## [Anthropic Launches Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) ⭐️ 7.0/10
 
-A developer documents their migration from GitHub to the self-hosted Forgejo platform, emphasizing benefits of decentralization and control, while noting the trade-off of losing their social graph. This story reflects a growing movement among developers to move away from centralized platforms like GitHub, driven by concerns over control, privacy, and reliance on corporate infrastructure. It highlights the practical considerations and challenges of adopting decentralized alternatives. The author self-hosts Forgejo on their own hardware, gaining full control but losing GitHub's social graph features like stars, followers, and contributions. They note that tools like GitSocial can help preserve and rebuild some social connections.
+Anthropic has announced a new Claude subscription tier specifically tailored for small businesses to help them automate tasks and integrate AI into their workflows. This move democratizes access to advanced AI tools for smaller organizations, potentially transforming how they handle tedious administrative tasks like invoice categorization. However, it also highlights the critical need for user-friendly interfaces and robust security measures for non-technical users. Users are already leveraging tools like Claude Code to automate invoice processing by connecting it to IMAP, read-only banking tokens, and accounting software like beancount. The main bottlenecks remain the complexity of managing codebases for non-engineers and the significant security risks associated with granting AI access to sensitive financial systems without proper hygiene.
 
-hackernews · jorijn · May 13, 12:54 · [Discussion](https://news.ycombinator.com/item?id=48121266)
+hackernews · neilfrndes · May 14, 03:59 · [Discussion](https://news.ycombinator.com/item?id=48130950)
 
-**Background**: Forgejo is a self-hosted, lightweight software forge written in Go, licensed under GPLv3, that provides Git repository hosting, issue tracking, and collaboration features. It emerged from a fork of Gitea and emphasizes community governance. Unlike GitHub, which is a centralized service, Forgejo allows individuals and organizations to host their own instances, promoting decentralization. Projects like Codeberg offer public Forgejo instances, and federation support is being developed to interconnect different forges.
+**Background**: Claude is an AI assistant developed by Anthropic, and Claude Code is an agentic tool that allows users to delegate coding and automation tasks to the AI. Small businesses often struggle with repetitive administrative tasks like invoice categorization, which are currently either handled manually or outsourced to data entry workers, making them prime candidates for AI automation.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Forgejo">Forgejo</a></li>
-<li><a href="https://forgejo.org/">Forgejo – Beyond coding. We forge.</a></li>
+**Discussion**: The community is excited about the productivity boost for non-engineers but emphasizes that a user-friendly UI is desperately needed to make code-based AI tools accessible to the average person. Additionally, users raised serious security concerns, noting that non-technical staff may lack the security hygiene required to safely grant AI access to financial and email systems, potentially leading to disastrous outcomes like paying fraudulent invoices.
 
-</ul>
-</details>
-
-**Discussion**: Comments express enthusiasm for decentralization, with some users already self-hosting or donating to Forgejo and Codeberg to support federation. Others caution about maintaining GitHub mirrors for visibility and discuss tools like GitSocial for cross-forge collaboration. There are also concerns about AI scrapers and the scaling challenges GitHub faces due to increased AI-driven usage.
-
-**Tags**: `#Git`, `#self-hosting`, `#decentralization`, `#Forgejo`, `#open source`
+**Tags**: `#AI`, `#Small Business`, `#Claude`, `#Automation`, `#UI/UX`
 
 ---
 
 <a id="item-4"></a>
-## [ProPublica Reveals Algorithmic Health Insurance Denial System](https://www.propublica.org/article/evicore-health-insurance-denials-cigna-unitedhealthcare-aetna-prior-authorizations) ⭐️ 8.0/10
+## [Guide to Registering Free .us Locality Domains and Its Challenges](https://fredchan.org/blog/locality-domains-guide/) ⭐️ 7.0/10
 
-ProPublica published an investigation detailing how health insurers including Cigna, UnitedHealthcare, and Aetna use algorithms and non-physician reviewers to systematically deny coverage, often labeling procedures as 'not medically necessary'. This practice raises profound ethical concerns about the use of AI in healthcare, as algorithmic denials can bypass individualized clinical judgment, leading to inappropriate denials and patient harm, affecting millions of insured Americans. According to the report, the algorithm flags potential issues and sends requests to in-house nurses and doctors for review, but only physicians can issue a final denial; a 2022 settlement with Carelon for $13 million highlighted tactics such as limiting fax machines to receive only 5–10 pages.
+A 2025 guide outlines the process for registering a free *.city.state.us locality domain, revealing that the procedure involves significant bureaucratic and technical obstacles. It highlights that while these domains are theoretically free, actually obtaining one requires navigating legacy registrars or strict municipal approval processes. This highlights a fascinating but dysfunctional corner of internet infrastructure where free domain names exist but are practically inaccessible due to administrative decay. It underscores the challenges of maintaining legacy namespace systems and the friction between historical internet policies and modern usability. Registering a domain in a non-delegated locality can require a notarized letter from the local government, which often has no established procedure for such requests. Additionally, a newly discovered online portal at localitymanagement.us might replace older email methods, though the system appears unstable, and .us domains inherently lack WHOIS privacy.
 
-hackernews · ceejayoz · May 13, 19:01 · [Discussion](https://news.ycombinator.com/item?id=48126000)
+hackernews · speckx · May 13, 14:45 · [Discussion](https://news.ycombinator.com/item?id=48122635)
 
-**Background**: Prior authorization is a common insurance process requiring pre-approval for medical services. Concerns about algorithmic bias and lack of transparency in such decisions have been growing, with similar issues seen in Medicare Advantage plans. Federal regulations proposed in 2024 to address AI bias were not finalized, and the government is testing AI in traditional Medicare through a pilot program.
+**Background**: Before second-level .us registrations were allowed in 2002, the .us top-level domain primarily used a hierarchical geographic structure requiring fourth-level domains like organization.locality.state.us. Locality domains are based on city or county names and were originally intended to organize municipal entities, businesses, and residents geographically. While they are free to register, the decentralized delegation of these domains to various local operators has led to inconsistent and often outdated management.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.kff.org/patient-consumer-protections/regulation-of-ai-in-prior-authorization-and-claims-review-a-look-at-federal-and-state-consumer-protections/">Regulation of AI in Prior Authorization and Claims Review: A Look at Federal and State Consumer Protections | KFF</a></li>
-<li><a href="https://www.pbs.org/newshour/show/how-algorithms-are-being-used-to-deny-health-insurance-claims-in-bulk">How algorithms are being used to deny health insurance claims</a></li>
-<li><a href="https://councils.forbes.com/blog/how-ai-is-reshaping-prior-authorization-in-health-insurance">How AI Is Reshaping Prior Authorization in Health Insurance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/.us">.us - Wikipedia</a></li>
+<li><a href="https://www.about.us/locality-structure">usTLD Locality-Based Structure - US domain name</a></li>
+<li><a href="http://nguyen.cincinnati.oh.us/locality.html">Obtaining a locality domain - Nguyễn.Cincinnati</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Physician commenters expressed frustration with non-physician 'peers' conducting denial reviews, while others criticized the high per capita healthcare spending in the US and the use of algorithms to control costs. One commenter highlighted a lawsuit revealing tactics like limiting fax pages to obstruct coverage requests.
+**Discussion**: Commenters shared extreme registration hurdles, such as spending 18 months tracking down the widow of a deceased out-of-state registrar or facing demands for notarized letters from confused city officials. Others noted the discovery of a new online registration portal that is currently crashing under traffic, and lamented that the .us TLD forbids WHOIS privacy, making these domains a security hazard for personal use.
 
-**Tags**: `#healthcare`, `#AI ethics`, `#insurance`, `#algorithm bias`, `#investigative journalism`
+**Tags**: `#dns`, `#us-tld`, `#internet-infrastructure`, `#domain-registration`, `#sysadmin`
 
 ---
 
 <a id="item-5"></a>
-## [CSP Allow-list Experiment](https://simonwillison.net/2026/May/13/csp-allow/#atom-everything) ⭐️ 8.0/10
+## [MacBook Neo Deep Dive: Benchmarks, 8GB RAM, and Wafer Economics](https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/) ⭐️ 7.0/10
 
-Simon Willison has created a tool that demonstrates how to dynamically allow-list domains in CSP-protected sandboxed iframes by intercepting fetch errors. The parent window prompts the user to add blocked origins to an allow-list and refreshes the page. This approach offers a practical way to handle CSP restrictions in sandboxed iframes without wholesale relaxation of security policies. It empowers web security practitioners to build user-controlled allow-lists, improving usability while maintaining strong security. The tool uses a custom fetch() function inside the sandboxed iframe to catch CSP violations, which are then relayed to the parent window. The parent window can prompt the user to add the blocked domain to a connect-src allow-list, after which the page refreshes to apply the new policy.
+A deep dive analysis has been published examining the newly released MacBook Neo, which is Apple's first laptop to use an A-series chip instead of an M-series chip, featuring a starting price of $599 and 8GB of RAM. The analysis specifically evaluates its benchmarks, wafer economics, and the implications of its memory constraints. This analysis is significant because it evaluates Apple's strategic shift to use an iPhone chip in a $599 Mac, which could disrupt the budget laptop market and redefine hardware longevity expectations. The 8GB RAM debate highlights the tension between cost-saving wafer economics and user experience, impacting a massive segment of entry-level consumers. Technically, the MacBook Neo uses an A-series chip rather than the M-series, and its I/O is limited to one USB 2.0 port and one USB 3 port (supporting up to 10Gb/s), with no Thunderbolt support. The 8GB RAM constraint acts as a forcing function for macOS efficiency, but limits multitasking capabilities and fast external storage options.
 
-rss · Simon Willison · May 13, 04:50
+hackernews · tosh · May 13, 18:30 · [Discussion](https://news.ycombinator.com/item?id=48125617)
 
-**Background**: Content Security Policy (CSP) is a security standard that restricts which resources a web page can load. Sandboxed iframes isolate embedded content but can be overly restrictive, especially for APIs that require dynamic domains. Typically, CSP allow-lists are static, requiring manual updates. This experiment shows a dynamic alternative by intercepting fetch errors.
+**Background**: The MacBook Neo, announced on March 4, 2026, is Apple's newest entry-level laptop positioned below the MacBook Air, starting at $599. It is notable for being the first Mac to utilize an A-series chip typically found in iPhones, rather than the M-series chips used in other Apple silicon Macs. Wafer economics refers to the cost-efficiency of manufacturing semiconductors on silicon wafers, where increasing wafer diameters (like the industry-standard 300mm) improves throughput and reduces the per-chip cost, directly influencing how Apple prices and specs its entry-level hardware.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://simonwillison.net/2026/May/13/csp-allow/">Tool: CSP Allow-list Experiment | Simon Willison’s Weblog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MacBook_Neo">MacBook Neo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wafer_(electronics)">Wafer (electronics) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#CSP`, `#security`, `#web development`, `#sandbox`, `#iframe`
+**Discussion**: The community is divided but generally positive about the MacBook Neo's value, with users praising its low cost and surprising longevity, as some report older 8GB M1 Airs still functioning perfectly after years. However, concerns were raised about Apple's 7-year update limit restricting hardware lifespan, and debates emerged over I/O limitations, though some argued that 10Gb/s USB 3 is sufficient for the $600 market.
+
+**Tags**: `#Apple`, `#Hardware`, `#Benchmarks`, `#Economics`, `#Memory`
 
 ---
 
 <a id="item-6"></a>
-## [Fragnesia: New Linux Kernel LPE Vulnerability Discovered](https://lwn.net/Articles/1072647/) ⭐️ 8.0/10
+## [Twin Brothers Wipe 96 Government Databases After Firing](https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/) ⭐️ 7.0/10
 
-A new local-privilege-escalation vulnerability named Fragnesia has been discovered in the Linux XFRM ESP subsystem. It allows arbitrary byte writes into the kernel page cache of read-only files without requiring a race condition. This vulnerability poses a significant security risk as it allows unprivileged users to escalate privileges to root on affected Linux systems. It belongs to the same class as the recently disclosed Dirty Frag vulnerabilities, expanding the attack surface. The exploit does not require a race condition and a proof-of-concept exploit is publicly available. A patch has been proposed but has not yet been merged into Linus Torvalds's tree or any stable kernel branches.
+Twin brothers, shortly after being fired from their IT positions, executed a "DROP DATABASE" command to wipe 96 government databases, including a Department of Homeland Security production database. One brother even used an AI tool to ask how to clear SQL server logs immediately after the deletion. This incident highlights severe insider threat vulnerabilities and critical failures in government IT security and offboarding procedures. It underscores the devastating potential for disgruntled employees to cause massive data loss when access revocation is delayed or inadequate. The brothers deleted a Department of Homeland Security database using the command "DROP DATABASE dhsproddb" at 4:58 pm and immediately asked an AI how to clear system logs. A search warrant later executed at one brother's home revealed firearms and ammunition, which he was prohibited from owning due to prior crimes.
 
-rss · LWN.net · May 13, 15:26
+hackernews · jnord · May 12, 22:28 · [Discussion](https://news.ycombinator.com/item?id=48115438)
 
-**Background**: The XFRM (transform) subsystem in the Linux kernel handles IPsec packet transformations, including encryption and authentication. ESP (Encapsulating Security Payload) is a protocol within IPsec that provides confidentiality and data integrity. Fragnesia is a logic bug in the ESP-in-TCP handling code that allows arbitrary writes to read-only file page cache, enabling privilege escalation.
+**Background**: Insider threats are cybersecurity risks posed by individuals with authorized access to an organization's systems, often exploiting inadequate offboarding processes. The "DROP DATABASE" command is a standard SQL instruction that permanently deletes an entire database, making it a dangerous tool in the wrong hands. Proper IT offboarding requires immediately revoking all system access the moment an employee is terminated to prevent retaliatory data destruction.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://docs.cilium.io/en/latest/reference-guides/xfrm/index.html">XFRM Reference Guide — Cilium 1.20.0-dev documentation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/IPsec">IPsec - Wikipedia</a></li>
-<li><a href="https://www.tenable.com/blog/dirty-frag-cve-2026-43284-cve-2026-43500-frequently-asked-questions-linux-kernel-lpe">Dirty Frag (CVE-2026-43284,CVE-2026-43500): Linux Kernel ...</a></li>
+**Discussion**: The community expressed a mix of amusement and alarm at the sheer ineptitude of the government's security practices, questioning how the brothers were even hired for sensitive roles. Commenters also debated the potential fallout, worrying that employers might overcorrect by making all firings abruptly dehumanizing, while others noted the absurdity of the perpetrators committing additional crimes while already committing a cybercrime.
 
-</ul>
-</details>
-
-**Tags**: `#Linux kernel`, `#security`, `#vulnerability`, `#LPE`, `#privilege escalation`
+**Tags**: `#cybersecurity`, `#insider threat`, `#database administration`, `#government IT`
 
 ---
 
 <a id="item-7"></a>
-## [Revisiting mshare: page table sharing for Linux shared memory](https://lwn.net/Articles/1072333/) ⭐️ 8.0/10
+## [Princeton Ends 133-Year Unproctored Exam Tradition Due to AI](https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent) ⭐️ 7.0/10
 
-At the 2026 LSFMM+BPF Summit, Anthony Yznaga presented an updated mshare patch set that introduces a new system-call-based API (mshare_create, mshare_attach, etc.) for sharing page tables among unrelated processes sharing memory, replacing the earlier msharefs filesystem approach. This work directly addresses a scalability issue where the page table overhead for large shared memory regions can exceed the memory itself, impacting workloads like databases and virtualization. If merged, mshare could significantly reduce memory consumption and improve performance for multi-process shared-memory applications in Linux. The new API includes mshare_create() returning a file descriptor, with region size set via ftruncate(), and mshare_attach() to map the region. Other calls like mshare_map(), mshare_advise(), and mshare_protect() handle mapping, advice, and protection changes.
+Princeton University has officially ended its 133-year-old tradition of unproctored in-person exams by mandating proctors, a policy shift primarily driven by the rise of AI-assisted cheating. This policy shift marks a significant cultural change for one of the most prominent high-trust academic institutions, reflecting how generative AI is fundamentally disrupting traditional educational models and academic integrity worldwide. Under the previous honor code, students took exams without faculty supervision and were expected to report any violations to a student-run body, but the accessibility of multimodal AI models has made this system unsustainable.
 
-rss · LWN.net · May 13, 13:19
+hackernews · bookofjoe · May 13, 20:12 · [Discussion](https://news.ycombinator.com/item?id=48126848)
 
-**Background**: In Linux, processes that share memory each maintain their own copy of page tables, leading to significant overhead when many processes share large regions. Page tables are data structures used by the CPU to translate virtual addresses to physical addresses. mshare aims to allow unrelated processes to share a single set of page tables for the same physical memory, reducing duplication and memory pressure.
+**Background**: For 133 years, Princeton University operated under an honor code that relied heavily on student integrity, where professors would hand out exams and leave the room. This high-trust system assumed that students would neither cheat nor tolerate cheating by their peers. However, the advent of powerful, easily accessible generative AI tools has provided students with unprecedented capabilities to cheat on assignments and exams, challenging the viability of such honor systems.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://lwn.net/Articles/895217/">Sharing page tables with mshare () - LWN.net</a></li>
-<li><a href="https://blogs.oracle.com/linux/mshare">Introduction to mshare | linux - Oracle Blogs</a></li>
+**Discussion**: The community discussion highlights a divide in perspectives: some argue this reflects a broader societal shift from a high-trust to a low-trust culture rather than just an AI problem, while others share firsthand accounts of students using multimodal AI to cheat in real-time. Additionally, some educators note that while cheating methods have existed for years, AI actually makes cheating easier to detect because the quality of the answers becomes suspiciously high, and some question why students would object to proctoring over the burden of policing peers.
 
-</ul>
-</details>
-
-**Tags**: `#Linux kernel`, `#memory management`, `#page tables`, `#mshare`, `#LSFMM+BPF`
+**Tags**: `#education`, `#academic-integrity`, `#AI`, `#society`, `#policy`
 
 ---
 
 <a id="item-8"></a>
-## [German Sovereign Tech Fund invests €1M+ in KDE security](https://lwn.net/Articles/1072565/) ⭐️ 8.0/10
+## [CSP Allow-list Experiment for Sandboxed Iframes](https://simonwillison.net/2026/May/13/csp-allow/#atom-everything) ⭐️ 7.0/10
 
-The Sovereign Tech Fund has awarded over €1 million to the KDE project to strengthen the security and reliability of its core infrastructure, including Plasma, KDE Linux, and communication frameworks. This significant investment from a German government-backed fund underscores the growing recognition of open-source desktop environments as critical digital infrastructure, and will directly benefit millions of KDE users worldwide by improving security and stability. The investment will focus on structural improvements to KDE's core components, such as Plasma desktop, KDE Linux (an Arch-based immutable distribution), and the underlying frameworks for communication services.
+Simon Willison demonstrated a new experiment where a custom fetch() function intercepts Content Security Policy (CSP) errors within a sandboxed iframe and prompts the parent window to dynamically allow-list the blocked domains. This allows users to selectively grant permissions to restricted origins and refresh the page without disabling the CSP entirely. This approach offers a practical and secure way to handle the strict restrictions of CSP in sandboxed iframes, which often break functionality when external resources are needed. It enables developers to build secure embedded applications that can dynamically request user permission for specific domains, balancing strict security with usability. The experiment utilizes a custom fetch() that catches CSP violations and communicates them to the parent window, which then displays a dialog prompt to the user for approval. Willison noted that this specific tool was built using GPT-5.5 xhigh running in the Codex desktop app.
 
-rss · LWN.net · May 13, 13:09
+rss · Simon Willison · May 13, 04:50
 
-**Background**: The Sovereign Tech Fund (STF) is a German public initiative under the Federal Ministry for Economic Affairs and Climate Action, aimed at financing the maintenance, development, and security of critical open-source software infrastructure. KDE is one of the largest free desktop environment projects, providing a graphical interface for Linux and other Unix-like systems. KDE Linux is an immutable distribution currently in alpha, using Arch Linux packages with Flatpak for app delivery.
+**Background**: Content Security Policy (CSP) is a computer security standard designed to prevent cross-site scripting (XSS) and other code injection attacks by instructing browsers on which resources are allowed to load. Sandboxed iframes provide an additional layer of security by applying strict restrictions to the content displayed within them, isolating it from the parent page. While combining CSP and sandboxed iframes creates a highly secure environment, it can inadvertently block legitimate external resources that the embedded application needs to function.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Sovereign_Tech_Fund">Sovereign Tech Fund</a></li>
-<li><a href="https://en.wikipedia.org/wiki/KDE_Linux">KDE Linux</a></li>
+<li><a href="https://simonwillison.net/2026/May/13/csp-allow/">Tool: CSP Allow-list Experiment - Simon Willison's Weblog</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">Content Security Policy (CSP) - HTTP - MDN Web Docs</a></li>
+<li><a href="https://web.dev/articles/sandboxed-iframes">Play safely in sandboxed IFrames | Articles | web.dev</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#KDE`, `#open source`, `#funding`, `#desktop environment`, `#security`
+**Tags**: `#web-security`, `#CSP`, `#iframe`, `#javascript`, `#frontend`
 
 ---
 
 <a id="item-9"></a>
-## [Google Shuts Free Search, Cloudflare Blocks AI Bots: Community Seeks Alternatives](https://www.reddit.com/r/LocalLLaMA/comments/1tcaboi/websearch_is_coming_to_a_screeching_performance/) ⭐️ 8.0/10
+## [Enterprise TDMs Motivated by Job Security Over Technical Merit](https://simonwillison.net/2026/May/12/mitchell-hashimoto/#atom-everything) ⭐️ 7.0/10
 
-Google will limit its free search tier to 50 domains for site-specific queries and fully shut it down by January 1, 2027, with no public pricing for advanced searches. Cloudflare now defaults to blocking all AI bot scraping across its network, including a recent partnership with GoDaddy. These changes threaten the availability of web data for training and running AI models, especially local models that rely on real-time web pulls. The community may need to shift toward decentralized search alternatives, which could reshape the open-source AI ecosystem. Google's free search index restriction and shutdown timeline affect site-specific search, while Cloudflare's default AI bot blocking impacts a large portion of the web. Community discussions highlight existing alternatives such as YaCy, SearXNG, Brave Search API, and Common Crawl.
+Mitchell Hashimoto argued that 90% of enterprise Technical Decision Makers (TDMs) are primarily motivated by avoiding termination rather than pursuing technical excellence. This causes them to adopt analyst-driven buzzwords and trends, such as an 'AI strategy,' instead of evaluating software based on its technical merits. This insight reveals a fundamental disconnect between practitioner values and enterprise purchasing decisions, explaining why buzzword-compliant software often wins enterprise contracts. It highlights that marketing to enterprises requires appealing to risk aversion and analyst validation rather than just demonstrating technical superiority. Hashimoto points out that these decision-makers do not engage with technical communities like Lobsters or contribute to GitHub on weekends, treating their jobs strictly as 9-to-5 obligations. Consequently, they rely on guidance from major analyst firms like Gartner and McKinsey to make defensible purchasing choices.
 
-reddit · r/LocalLLaMA · NetTechMan · May 13, 19:35
+rss · Simon Willison · May 12, 22:21
 
-**Background**: Web scraping is essential for training large language models and providing real-time information to AI systems. Google's free search API has been a key resource, while Cloudflare protects many websites from unwanted traffic. The changes create a gap that decentralized or open-source search projects might fill.
+**Background**: Enterprise software sales often involve complex procurement processes where decision-makers must justify their choices to upper management to avoid blame if a project fails. Analyst firms like Gartner and McKinsey wield significant influence by publishing reports that define industry best practices, providing a 'safe' cover for corporate purchases. Mitchell Hashimoto is the co-founder of HashiCorp, giving him firsthand experience navigating the enterprise software market.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click/">Declare your AIndependence: block AI bots , scrapers and crawlers...</a></li>
-<li><a href="https://sproutscape.io/is-your-website-invisible-to-ai-search-cloudflares-new-default-could-be-blocking-you/">Cloudflare AI Bot Blocking – Make Sure Your Website Ranks in AI ...</a></li>
-<li><a href="https://www.zdnet.com/article/google-search-alternatives-no-ai/">Sick of AI in Search ? These 7 Google alternatives still put... | ZDNET</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit community generally agrees these changes signal a move toward search paywalls and monetization of bot traffic. Many advocate for decentralized alternatives like YaCy and P2P networks, while some suggest scraping once and sharing the data, or finally adopting micropayments to eliminate ads.
-
-**Tags**: `#web scraping`, `#AI`, `#search engines`, `#decentralization`, `#Cloudflare`
+**Tags**: `#enterprise-software`, `#technical-decision-making`, `#marketing`, `#ai-strategy`
 
 ---
 
 <a id="item-10"></a>
-## [DramaBox: Expressive Open-Source Voice Model on LTX 2.3](https://v.redd.it/5zdi52w4rx0h1) ⭐️ 8.0/10
+## [llm CLI 0.32a2 Adds OpenAI Responses Endpoint Support](https://simonwillison.net/2026/May/12/llm/#atom-everything) ⭐️ 7.0/10
 
-Resemble AI has released DramaBox, an open-source expressive text-to-speech model built on LTX-2.3. It can generate highly expressive vocal performances including emotions, laughs, sighs, and breaths from a single prompt. This open-source release makes advanced expressive TTS accessible to developers and researchers, enabling applications in indie game development, voice cloning for accessibility, and creative content. It represents a step forward in making AI voices sound more natural and human-like. DramaBox is trained on the LTX-2.3 audio branch under the LTX-2 Community License and supports voice cloning. However, some users report that while expressiveness is high, audio quality can still sound robotic or muffled.
+The 0.32a2 alpha release of the llm CLI tool introduces support for OpenAI's new /v1/responses endpoint, replacing the older /v1/chat/completions for reasoning-capable models. It also allows users to view summarized reasoning tokens in a different color or hide them using the -R flag. This update is crucial for developers working with GPT-5 class models, as the new endpoint enables interleaved reasoning across tool calls, allowing the model to reason between tool executions. It future-proofs the llm tool for OpenAI's latest API paradigm shift and advanced agentic workflows. Users can now see summarized reasoning tokens displayed in a different color to standard error when running prompts against OpenAI models. The -R or --hide-reasoning command-line flags can be used to suppress the display of these reasoning tokens.
 
-reddit · r/LocalLLaMA · manmaynakhashi · May 13, 17:06 · [Discussion](https://www.reddit.com/r/LocalLLaMA/comments/1tc5wx1/dramabox_most_expressive_voice_model_ever_based/)
+rss · Simon Willison · May 12, 17:45
 
-**Background**: LTX-2.3 is an AI video model by Lightricks that includes audio capabilities for joint audio-visual generation. Text-to-speech (TTS) converts text to spoken audio, and expressive TTS adds emotional and prosodic variations for more natural speech. Resemble AI built DramaBox on top of LTX-2.3's audio component to enhance expressiveness.
+**Background**: OpenAI's /v1/responses endpoint is a newer API interface designed to replace /v1/chat/completions, offering enhanced features for advanced agentic workflows and structured outputs. Interleaved reasoning allows models to "think" using hidden reasoning tokens between tool calls, leading to more sophisticated decision-making after receiving tool results. Reasoning tokens represent the model's internal chain of thought, which OpenAI now provides as summarized outputs rather than raw hidden text.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/resemble-ai/DramaBox">GitHub - resemble-ai/DramaBox: super expressive prompting model based on ltx2.3 · GitHub</a></li>
-<li><a href="https://www.resemble.ai/learn/models/dramabox">DramaBox: Expressive Text to Speech Model | Resemble AI</a></li>
-<li><a href="https://ltx.io/model/ltx-2-3">LTX-2.3: Introducing LTX's Latest AI Video Model | LTX Model</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/reasoning">Reasoning models | OpenAI API</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/features/interleaved_thinking/">Interleaved Thinking - vLLM</a></li>
+<li><a href="https://wisdom-docs.juheapi.com/api-reference/text/responses">OpenAI Responses API - Wisdom Gate Docs</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are generally positive, praising the open-source release and potential for indie games and voice cloning. However, several users note that despite high expressiveness, the audio quality still sounds robotic or low-fidelity, likening it to 'speaking through a pipe.' Some also inquire about monetization and specific applications.
-
-**Tags**: `#TTS`, `#voice synthesis`, `#open-source`, `#expressive voice`, `#AI`
-
----
-
-<a id="item-11"></a>
-## [Samsung union strike slashes chip output, supply chain at risk](https://t.me/zaihuapd/41355) ⭐️ 8.0/10
-
-Samsung Electronics' largest union reported a drastic 58% drop in foundry chip output and an 18% drop in memory chip output during the night shift on Thursday due to mass employee absences at wage protest rallies. The union has threatened a full 18-day strike starting May 21 if demands for higher base pay and removal of bonus caps are not met. This protest threatens to disrupt global semiconductor supply chains, as Samsung is a leading memory chipmaker and major foundry player. A full strike could severely impact industries reliant on Samsung's chips, including AI, automotive, and consumer electronics. The output drop occurred during the night shift from 10 p.m. Thursday to 6 a.m. Friday, with foundry chips down 58% and memory chips down 18%. The 18-day potential strike starting May 21 would be the first full-scale walkout at Samsung Electronics, affecting both its Korean and global operations.
-
-telegram · zaihuapd · May 13, 01:11
-
-**Background**: Samsung Electronics is the world's largest memory chipmaker and a top-tier foundry, competing with TSMC. The union, representing about 28,000 workers, is demanding higher base wages and removal of a performance bonus cap. Previous negotiations failed, leading to this protest. Foundry chips are custom-made for clients like Tesla, while memory chips are used in various devices.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.sammobile.com/news/samsung-bags-massive-16-5-billion-deal-make-2nm-ai-chips-tesla/">Samsung bags massive $16.5 billion deal to make 2nm AI chips for...</a></li>
-<li><a href="https://www.reuters.com/technology/samsung-raises-non-memory-chip-investment-target-skorea-announces-bigger-tax-2021-05-13/">Samsung boosts non-memory chip investment to $151 bln as</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#semiconductors`, `#labor dispute`, `#Samsung`, `#supply chain`, `#chip production`
-
----
-
-<a id="item-12"></a>
-## [Xiaomi Open-Sources OneVL: One-Step Latent Reasoning for Autonomous Driving](https://mp.weixin.qq.com/s/7po3r6YtmuXm8Xny1bw61Q) ⭐️ 8.0/10
-
-Xiaomi has open-sourced OneVL, a one-step latent space reasoning framework that unifies Vision-Language-Action (VLA) models and world models for autonomous driving, achieving state-of-the-art performance on multiple benchmarks including NAVSIM with a PDM-score of 88.84. This is the first framework to unify VLA and world models in a single one-step latent reasoning paradigm, outperforming explicit autoregressive chain-of-thought methods while reducing latency by over 94%, making it highly significant for real-time autonomous driving systems. OneVL uses latent chain-of-thought with visual latent tokens encoding physical causality and language latent tokens encoding driving intent, removing dual auxiliary decoders at inference. Its MLP-regression variant achieves a latency of just 0.24 seconds, only 5.4% of typical VLA autoregressive inference.
-
-telegram · zaihuapd · May 13, 10:33
-
-**Background**: Vision-Language-Action (VLA) models integrate visual perception and language reasoning to generate driving actions, while world models simulate future scenarios for planning. Traditional approaches often combine them in a multi-step autoregressive manner, which is computationally expensive. OneVL's latent space reasoning compresses both processes into a single forward pass, enabling efficient real-time operation.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2501.11260">[2501.11260] A Survey of World Models for Autonomous Driving The Waymo World Model: A New Frontier For Autonomous Driving ... Awesome World Models for Autonomous Driving - GitHub DriveDreamer: Towards Real-world-driven World Models for ... Research on World Models for Connected Automated Driving ... [PDF] A Survey of World Models for Autonomous Driving ... World models for autonomous driving</a></li>
-<li><a href="https://github.com/LMD0311/Awesome-World-Model">Awesome World Models for Autonomous Driving - GitHub DriveDreamer: Towards Real-world-driven World Models for ... Research on World Models for Connected Automated Driving ... [PDF] A Survey of World Models for Autonomous Driving ... World models for autonomous driving</a></li>
-<li><a href="https://arxiv.org/abs/2509.25239">[2509.25239] A Formal Comparison Between Chain of Thought and</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#VLA`, `#autonomous driving`, `#latent space reasoning`, `#world model`, `#Xiaomi`
+**Tags**: `#llm`, `#openai`, `#api`, `#reasoning`, `#gpt-5`
 
 ---
